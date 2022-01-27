@@ -22,7 +22,8 @@ let state = {
 			{ id: 4, message: 'Dorou' },
 			{ id: 5, message: 'YO' },
 		],
-	},
+    },
+    
 };
 
 export default state;

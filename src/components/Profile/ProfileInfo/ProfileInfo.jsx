@@ -3,7 +3,7 @@ import s from './ProfileInfo.module.css';
 
 const ProfileInfo = (props) => {
 	return (
-		<div>
+		<div className={s.prof}>
 			<div>
 				<img className={s.img}
 					src="https://wallpaperaccess.com/full/25682.jpg"

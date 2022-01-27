@@ -2,8 +2,6 @@ import React from 'react';
 import s from './Dialogs.module.css';
 import Message from './Message/Message';
 import DialogItem from './DialogItem/DialogItem';
-// import {dialogs} from './../../index';
-// import {messages} from './../../index';
 
 const Dialogs = (props) => {
 	let dialogsElements = props.state.dialogs.map((d) => (

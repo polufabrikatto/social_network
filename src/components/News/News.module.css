@@ -2,6 +2,8 @@
     grid-area: c;
     color: greenyellow;
     height: 100px;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 .item img {
     height: 30px;
