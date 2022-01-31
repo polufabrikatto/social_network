@@ -1,0 +1,10 @@
+h1 {
+    font: 2em caption;
+    margin-top: 50px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.friends {
+	display: grid;
+	grid-template-columns: 2fr 2fr 2fr;
+}
