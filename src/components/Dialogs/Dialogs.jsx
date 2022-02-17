@@ -14,13 +14,24 @@ const Dialogs = (props) => {
 	));
 	let avatarsElements = props.state.avatars.map((a) => (
 		<Avatar avatar={a.avatar} id={a.id} />
-	));
+    ));
+    
+    let newMessage = React.createRef();
+    
+    let addMessage= () =>{
+        let text=newMessage.current.value;
+        alert(text)
+    }
 
 	return (
 		<div className={s.dialogs}>
 			<div className={s.avatars}>{avatarsElements}</div>
 			<div className={s.dialogsItems}>{dialogsElements}</div>
-			<div className={s.messages}>{messagesElements}</div>
+			<div className={s.messages}>
+				{messagesElements}
+                <textarea ref={newMessage}></textarea>
+                <button onClick={addMessage}>Add Message</button>
+			</div>
 		</div>
 	);
 };
